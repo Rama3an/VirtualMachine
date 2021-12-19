@@ -1,0 +1,18 @@
+input 201
+input 202
+install 200 0
+
+label condition
+Compare 201 202
+equel result
+less bSubA
+
+sub 201 202 201
+jump condititon
+
+label bsubA
+sub 202 201 202
+jump condition
+
+label result
+output 201

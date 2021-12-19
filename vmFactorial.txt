@@ -1,0 +1,21 @@
+install 201 1
+install 200 0
+
+input 210
+
+install 202 1
+install 203 1
+
+compare 200 210
+equal result
+
+label condition
+compare 210 202
+equal result
+
+add 201 202 202
+mul 203 202 203
+jump condition
+
+label result
+output 203 
